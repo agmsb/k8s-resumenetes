@@ -8,7 +8,6 @@ SUBNETWORK_NAME=$(awk '{for(i=1;i<=NF;i++) if ($i=="subnetwork_name:") print $(i
 POD_RANGE_NAME=$(awk '{for(i=1;i<=NF;i++) if ($i=="pod_range_name:") print $(i+1)}' options.yaml)
 SERVICES_RANGE_NAME=$(awk '{for(i=1;i<=NF;i++) if ($i=="services_range_name:") print $(i+1)}' options.yaml)
 
-
 ## Create GCP Network
 
 gcloud compute networks create $NETWORK_NAME \
@@ -32,3 +31,5 @@ gcloud beta container clusters create $CLUSTER_NAME --region us-west1 \
 --subnetwork agmsb-resume-net-k8s \
 --cluster-secondary-range-name=agmsb-resume-net-k8s-pod \
 --services-secondary-range-name=agmsb-resume-net-k8s-svc 
+
+echo "Creating GKE Cluster"
