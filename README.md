@@ -28,13 +28,13 @@ What you will (hopefully) learn:
 
 ## Labs ##
 
-1. [Understanding Source]
-2. [Building Container Images]
-3. [Creating a Kubernetes Cluster in GCP]
-4. [Deploying Containers into Kubernetes]
-5. [Exposing Containers in Kubernetes]
-6. [Creating an Ingress for Kubernetes Services]
-7. [Wrap-Up]
+1. [Understanding Source](/labs/understanding_source.md)
+2. [Building Container Images](/labs/building_container_images.md)
+3. [Creating a Kubernetes Cluster in GCP](/labs/creating_kubernetes_cluster.md)
+4. [Deploying Containers into Kubernetes](/labs/deploying_into_kubernetes.md)
+5. [Exposing Containers in Kubernetes](/labs/exposing_containers.md)
+6. [Creating an Ingress for Kubernetes Services](/labs/creating_ingress.md)
+7. [Clean-Up and Wrap-Up](/labs/clean_up.md)
 
 ## What Next? ##
 
