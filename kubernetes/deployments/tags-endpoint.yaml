@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: tags-endpoint
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: tags-endpoint-pods
+    spec:
+      containers:
+      - image: gcr.io/agmsb-appdev/tags-endpoint:1.0
+        name: tags-endpoint-container
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+          name: http-server

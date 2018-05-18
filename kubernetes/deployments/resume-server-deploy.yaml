@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: resumeserver
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        name: resumeserver-pods
+    spec:
+      containers:
+      - image: gcr.io/agmsb-appdev/resume-server:2.2
+        name: resumeserver-container
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+          name: http-server

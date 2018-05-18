@@ -1,0 +1,24 @@
+{
+	"name": "Anthony Bushong",
+	"summary": "This is my summary.",
+	"projects": [
+	 	{
+			"id": 1,
+			"name": "First Project",
+			"summary": "This is my first project.",
+			"url": "This is my first project url.",
+			"tags": [ "kubernetes", "git", "apex", "oracle", "golang", "google", "json" ]
+	    	}
+	],
+	"experience": [
+	 	{
+			"id": 1,
+			"name": "Initech",
+			"location": "Nowhere, USA",
+			"dates": "2016 - 2017",
+			"job_title": "Technical Janitor",
+			"summary": "This is my summary.",
+			"tags": [ "golang", "api", "nginx", "kubernetes", "gcp" ]
+	    	}
+	]
+}

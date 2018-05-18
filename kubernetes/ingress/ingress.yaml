@@ -1,0 +1,32 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: agmsb-ing
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /full
+        backend:
+          serviceName: full-endpoint
+          servicePort: 80
+      - path: /projects
+        backend:
+          serviceName: projects-endpoint
+          servicePort: 80
+      - path: /experience
+        backend:
+          serviceName: experience-endpoint
+          servicePort: 80
+      - path: /tags
+        backend:
+          serviceName: tags-endpoint
+          servicePort: 80
+      - path: /summary
+        backend:
+          serviceName: summary-endpoint
+          servicePort: 80
